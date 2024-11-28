@@ -16,6 +16,10 @@ function App() {
       const url = `${api.base}weather?q=${search}&units=metric&appid=${api.key}`;
       const response = await fetch(url);
       const data = await response.json();
+      if (!response.ok) {
+        alert(data.message);
+        return;
+      }
       const iconCode = data.weather[0].icon;
       console.log(data);
       setWeather({
@@ -34,22 +38,28 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Weather App</h1>
-
-        <div>
-          <input
-            type="text"
-            placeholder="Enter city/town..."
-            onChange={(e) => setSearch(e.target.value)}
-          ></input>
-          <button onClick={searchPressed}>Search</button>
+        <div class="container">
+          <h1>Weather App</h1>
+          <img src={weather.icon} onerror="this.src.display='none'" />
+          <div>
+            <input
+              class="inputField"
+              type="text"
+              placeholder="Enter city/town..."
+              onChange={(e) => setSearch(e.target.value)}
+            ></input>
+            <button class="button" onClick={searchPressed}>
+              Search
+            </button>
+          </div>
+          <div class="descriptionContainer">
+            <p>Location: {weather.location}</p>
+            <p>Condition: {weather.description}</p>
+            <p>Temperature: {weather.temperature} °C</p>
+            <p>Humidity: {weather.humidity}%</p>
+            <p>Wind Speed: {weather.windSpeed} m/s</p>
+          </div>
         </div>
-        <p>Location: {weather.location}</p>
-        <p>Description: {weather.description}</p>
-        <p>Temperature: {weather.temperature} °C</p>
-        <p>Humidity: {weather.humidity}%</p>
-        <p>Wind Speed: {weather.windSpeed} m/s</p>
-        <img src={weather.icon} onerror="this.src.display='none'" />
       </header>
     </div>
   );
