@@ -23,7 +23,8 @@ function App() {
         windSpeed: data.wind.speed,
         temperature: Math.floor(data.main.temp),
         location: data.name,
-        icon: `https://openweathermap.org/img/wn/${iconCode}.png`,
+        description: data.weather[0].description,
+        icon: `https://openweathermap.org/img/wn/${iconCode}@2x.png`,
       });
     } catch (error) {
       console.error("Could not fetch data", error);
@@ -44,10 +45,11 @@ function App() {
           <button onClick={searchPressed}>Search</button>
         </div>
         <p>Location: {weather.location}</p>
+        <p>Description: {weather.description}</p>
         <p>Temperature: {weather.temperature} °C</p>
         <p>Humidity: {weather.humidity}%</p>
         <p>Wind Speed: {weather.windSpeed} m/s</p>
-        <img src={weather.icon} alt="Weather icon" />
+        <img src={weather.icon} onerror="this.src.display='none'" />
       </header>
     </div>
   );
