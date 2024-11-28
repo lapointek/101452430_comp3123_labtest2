@@ -1,8 +1,8 @@
 ## Description
 
-This is a weather application where you can search for a city to display weather information like temperature, windspeed, condition, etc.
+This is a weather application where you can search for a city using an API from https://openweathermap.org/api to display weather information such as the temperature, windspeed, condition, humidity.
 
-## Available Scripts
+## Using the Weather Application
 
 In the project directory, you can run:
 
@@ -11,7 +11,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Images of Application
+## Weather Application Images
 
 ![alt text](https://github.com/lapointek/101452430_comp3123_labtest2/blob/main/images/weather_app.png)
 
