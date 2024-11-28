@@ -15,4 +15,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ![alt text](https://github.com/lapointek/101452430_comp3123_labtest2/blob/main/images/weather_app.png)
 
-![alt text](https://github.com/lapointek/101452430_comp3123_labtest2/blob/main/images/weather_app.png)
+![alt text](https://github.com/lapointek/101452430_comp3123_labtest2/blob/main/images/searched_city.png)
