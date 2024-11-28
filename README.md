@@ -11,6 +11,8 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-![alt text](https://github.com/lapointek/101452430_comp3123_labtest2/images/weather_app.png?raw=true)
+## Images of Application
 
-![alt text](https://github.com/lapointek/101452430_comp3123_labtest2/images/searched_city.png?raw=true)
+![alt text](https://github.com/lapointek/101452430_comp3123_labtest2/blob/main/images/weather_app.png)
+
+![alt text](https://github.com/lapointek/101452430_comp3123_labtest2/blob/main/images/weather_app.png)
