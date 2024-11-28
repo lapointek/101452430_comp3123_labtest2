@@ -38,7 +38,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div class="container">
-          <h1>Weather App</h1>
+          <h1>Weather Forecast</h1>
           <img src={weather.icon} onerror="this.src.display='none'" />
           <div>
             <input
